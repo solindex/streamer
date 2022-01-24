@@ -1,0 +1,31 @@
+[package]
+name = "solana-streamer"
+version = "1.8.14"
+description = "Solana Streamer"
+authors = ["Solana Maintainers <maintainers@solana.foundation>"]
+repository = "https://github.com/solana-labs/solana"
+license = "Apache-2.0"
+homepage = "https://solana.com/"
+documentation = "https://docs.rs/solana-streamer"
+edition = "2018"
+
+[dependencies]
+itertools = "0.10.1"
+log = "0.4.11"
+solana-metrics = { git = "https://github.com/solindex/metrics.git", version = "=1.8.14" }
+solana-sdk = { git = "https://github.com/solindex/sdk.git", version = "=1.8.14" }
+thiserror = "1.0"
+solana-measure = { git = "https://github.com/solindex/measure.git", version = "=1.8.14" }
+solana-logger = { git = "https://github.com/solindex/logger.git", version = "=1.8.14" }
+libc = "0.2.81"
+nix = "0.20.0"
+solana-perf = { git = "https://github.com/solindex/perf.git", version = "=1.8.14" }
+
+[dev-dependencies]
+
+[lib]
+crate-type = ["lib"]
+name = "solana_streamer"
+
+[package.metadata.docs.rs]
+targets = ["x86_64-unknown-linux-gnu"]
